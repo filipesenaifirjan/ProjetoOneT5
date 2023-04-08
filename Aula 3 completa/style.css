@@ -1,4 +1,14 @@
-body {
+
+	
+
+body.dark-mode {
+	background-color: #333; /* cor de fundo modo escuro */
+	color: #fff; /* cor do texto modo escuro */
+}
+
+button{
+	margin-bottom: 2%;
+	border-radius: 7%;
 	
 }
 #banner{
@@ -8,8 +18,15 @@ body {
 	background: #CCCCCC;
 	padding: 30px;
 
+
 }
-h1 {
+
+.titulo-principal {
+ 
+	margin-left: 20px;
+
+}
+.titulo-centralizado {
 	text-align: center;
 
 }
@@ -34,9 +51,7 @@ em strong {
 	background-color: #FFFFFF;
 	padding: 20px;
 }
-h2 {
-	text-align: center;
-}
+
 .imagembeneficios {
 	width: 50%;
 }
