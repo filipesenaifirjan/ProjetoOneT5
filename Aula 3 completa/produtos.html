@@ -7,10 +7,20 @@
     <title>Produtos - Barbearia Alura</title>
     <link rel="stylesheet" href="./reset.css"> <!--o reset tem que vir primeiro pra limpar o que o navegador deixa e assim aplicar o que queremos-->
     <link rel="stylesheet" href="./produtos.css">
-        
+   
     </style>
 </head>
 <body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
     <header>
         <div class="caixa">
         <h1><img src="./img/logo.png"></h1>
@@ -20,8 +30,9 @@
             <li><a href="produtos.html">Produtos</a></li>
             <li><a href="contato.html">Contatos</a></li>
         </ul>
+        
     </nav>
-</div>
+</div><button id="changeColorButton"><strong>Mudar para modo escuro</strong></button>
     </header>
     <main>
         <ul class="produtos">
@@ -50,5 +61,6 @@
         </ul>
        
     </main>
+    <script src="index.js"></script>
 </body>
 </html>
