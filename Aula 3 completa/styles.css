@@ -159,12 +159,23 @@ td, th {
 .titulo-principal {
     text-align: center;
     font-size: 2em;
-    margin: 1em;
+    margin: 0 0 1em;
     clear:left;
 
 
 }
-
+/*.titulo-principal::first-letter {
+    font-weight: bold;
+}*/
+p:first-line {
+    font-style: italic;
+}
+.titulo-principal:before {
+    content: " [ ";
+}
+.titulo-principal:after {
+    content:" ] "
+}
 .principal {
     padding: 3em 0;
     background: #FEFEFE;
@@ -222,6 +233,9 @@ td, th {
 }
 .imagem-beneficios {
     width: 60%;
+}
+.itens:before {
+    content: "🟊";
 }
 
 .video {
